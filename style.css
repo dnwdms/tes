@@ -1,0 +1,29 @@
+body {
+  background: #fffdf7;
+}
+
+pre {
+  position: relative;
+  background: #d3d6db;
+  padding: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border: 1px solid #e6e7e9;
+  max-width: 100000px;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  background: gray;
+  border-radius: 0.5em;
+  padding: 4px 14px;
+}
+
+.copy-button:hover {
+  color: #000;
+}
