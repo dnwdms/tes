@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana yg mau dibatalin?</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        form { background: #f4f4f4; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea{
+        width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            height: 100%;}
+        button {
+            background-color: #5EABD6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .container { text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mana yg mau dibatalin?</h1>
+        <form action="/form" method="POST">
+            <label for="rup">Kode RUP:</label>
+            <input type="text" id="rup" name="rup" required><br>
+            <label for="tiket">No Tiket:</label>
+            <input type="text" id="tiket" name="tiket" required><br>
+            <label for="alasan">Alasan Pembatalan:</label>
+            <textarea type="text" id="alasan" name="alasan" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

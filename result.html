@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini dia Hasilnyaaaa</title>
+    <style>
+        button {
+            background-color: #42b0f5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>This is your SQL Query!</h1>
+        <pre id="result">
+update transaksi.pengadaan set kd_rup = '{{ rup }}x', status_pembatalan ='Ya',alasan_pembatalan=' {{ alasan }} (TIKET-{{ tiket }})' where kd_rup = '{{ rup }}';
+update transaksi.riwayat_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}' ;
+update transaksi.riwayat_pengadaan_log set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.dokumen_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}' ;
+update transaksi.log_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.uppbj_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}' ;
+update transaksi.pokja_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}' ;
+update transaksi.pejabat_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.pokja_reviu set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.pic_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.kesimpulan_reviu set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.permohonan_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.status_revisi_akhir set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.revisi_akhir_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.kegiatan_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.sub_kegiatan_pengadaan set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.log_reviu set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';
+update transaksi.pic_pengadaan pp set kd_rup = '{{ rup }}x' where kd_rup = '{{ rup }}';</pre>
+
+<p><a href="/form"><button type="submit">Balik Bos</button></a></p>
+<script src="/static/script.js"></script>
+</body>
+</html>
